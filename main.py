@@ -1,14 +1,11 @@
 import webbrowser
 
 
-webbrowser.open("https://www.youtube.com")
+website_name = str(input("Enter the website you want to open: "))
 
 
 def new_tab():
-    webbrowser.open("https://www.google.com")
+    webbrowser.open(f"https://www.{website_name}.com")
 
 
-on = str(input("Press x to open a new tab: "))
-
-if on.lower() == "x":
-    new_tab()
+new_tab()
